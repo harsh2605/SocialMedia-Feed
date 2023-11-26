@@ -1,0 +1,85 @@
+.nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: var(--dark); */
+  background-image: linear-gradient(to left top, #0d2f62, #292044, #27152a, #1b0c15, #000000);
+  border-bottom: 1px solid var(--dark);
+  max-height: 200px;
+  z-index: 10;
+}
+.nav-bar-links {
+  display: flex;
+  justify-content: end;
+}
+.nav-bar a,
+.nav-bar .nav-dropdown-btn {
+  color: var(--light_text);
+  text-decoration: none;
+}
+.nav-bar .button-outline {
+  color: var(--bright);
+  margin-right: 12px;
+}
+.nav-bar .button-outline:hover {
+  color: var(--dark);
+}
+.nav-bar .nav-dropdown-btn {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.nav-bar .dropdown-div {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  top: 50px;
+  right: 2rem;
+  padding: 6px 0;
+  background-color: var(--light);
+  width: 12rem;
+  border-radius: 4px;
+  border: 2px solid var(--light);
+  box-shadow: 0px 0px 150px -2px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 150px -2px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 0px 150px -2px rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  font-size: 18px;
+  user-select: none;
+}
+.nav-bar img {
+  border-radius: 100%;
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--dark);
+  margin-right: 6px;
+}
+.nav-bar .nav-dropdown-btn:hover .dropdown-div,
+.nav-bar .nav-dropdown-btn .dropdown-div:hover {
+  display: flex;
+}
+.nav-bar .dropdown-div a {
+  padding: 4px 12px;
+}
+.nav-bar .dropdown-div hr {
+  margin: 8px 0;
+}
+.nav-bar .dropdown-div a:hover {
+  background-color: var(--dark);
+  color: #fff;
+}
+.nav-bar .dropdown-div .icon {
+  color: var(--bright);
+  margin-bottom: 2px;
+  margin-right: 8px;
+}
+.nav-bar h1{
+  margin-left: 10px;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  */
+  font-family:  "Lucida Handwriting", cursive;
+  font-size: 50px;
+  
+}

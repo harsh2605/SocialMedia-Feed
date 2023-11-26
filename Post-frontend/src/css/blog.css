@@ -1,0 +1,164 @@
+.blogs {
+  margin-top: 1rem;
+}
+.b_card {
+  position: relative;
+  margin-bottom: 1rem;
+  background-color: var(--dark);
+  padding: 1rem;
+  border-radius: 1rem;
+  word-wrap: break-word !important;
+  text-align: justify;
+}
+/* .b_card hr {
+  color: var(--light_text);
+  margin: 12px 0;
+} */
+/***************************** CARD HEADER ****************************/
+.b_card_head {
+  display: flex;
+  justify-content: space-between;
+}
+.b_card_head img {
+  border-radius: 100%;
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--dark);
+  margin-right: 10px;
+}
+.b_card_head h5 {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+}
+/*----------------------- CARD MENU DROPDOWN -------------------------*/
+.b_card_head .dropdown_div {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  top: 50px;
+  right: 22px;
+  padding: 6px 0;
+  background-color: var(--light);
+  width: 12rem;
+  border-radius: 4px;
+  border: 2px solid var(--light);
+  box-shadow: 0px 0px 150px -2px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 150px -2px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 0px 150px -2px rgba(0, 0, 0, 0.6);
+  z-index: 9;
+  font-size: 18px;
+  list-style-type: none;
+  user-select: none;
+}
+.b_card_head .dropdown_div.show {
+  display: flex;
+}
+.b_card_head .dropdown_div li {
+  padding: 4px 12px;
+  cursor: pointer;
+}
+.b_card_head .dropdown_div li:hover {
+  background-color: var(--dark);
+}
+.b_card_head .dropdown_div hr {
+  margin: 8px 0;
+}
+.b_card_head .dropdown_div .icon {
+  color: var(--bright);
+  margin-bottom: 2px;
+  margin-right: 8px;
+}
+.b_card_head .menu_icon {
+  margin-top: 2px;
+  cursor: pointer;
+}
+.b_card_head .menu_icon.active {
+  color: var(--bright);
+}
+/**************************** CARD BODY *****************************/
+.b_card_body {
+  padding: 12px 0 8px;
+  margin: 10px 0 6px;
+  border-top: 2px solid var(--light);
+  border-bottom: 2px solid var(--light);
+}
+.b_card_body h5 {
+  color: #fff;
+}
+.b_card_body p {
+  margin-bottom: 6px;
+}
+.b_card_body span {
+  font-size: 14px;
+  color: var(--dark_text);
+}
+
+/**************************** CARD FOOTER *****************************/
+.b_card_footer {
+  display: flex;
+}
+.b_card_footer div {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.b_card_footer div .liked,
+.b_card_footer div:hover {
+  color: var(--bright);
+}
+.b_card_footer div:hover {
+  background-color: var(--light);
+  border-radius: 4px;
+}
+
+/**************************** CARD COMMENT *****************************/
+.b_card_comment {
+  margin: 6px 0 0;
+  padding: 12px 0 0;
+  border-top: 2px solid var(--light);
+  /* border-bottom: 2px solid var(--light); */
+}
+.b_card_comment .b_card_allcomments {
+  border-bottom: 2px solid var(--light);
+}
+.b_card_comment img {
+  border-radius: 100%;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+  border: none;
+  margin-right: 10px;
+  /* margin-top: 2px; */
+  float: left;
+}
+
+/**************************** CARD ADD COMMENT FORM *****************************/
+.b_card_comment form img {
+  width: 40px;
+  height: 40px;
+}
+.b_card_comment form {
+  padding: 16px 0 10px;
+  display: flex;
+}
+.b_card_comment form input {
+  background-color: var(--light);
+  outline: none;
+  border: none;
+  height: 40px;
+  flex: 100;
+  margin: 0 10px 0 0;
+  border-radius: 20px;
+  font-size: 18px;
+  padding-left: 15px;
+  color: var(--light_text);
+}
+.b_card_comment .b_card_allcomments {
+  height: 230px;
+  overflow-y: scroll;
+  padding-right: 10px;
+}
